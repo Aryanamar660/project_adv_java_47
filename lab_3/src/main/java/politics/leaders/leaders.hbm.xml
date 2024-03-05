@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ <hibernate-mapping package = "com.leaders.politics.leaders"> 
+ <class name="politics.leaders.leaders" table="politics">
+ <id name="ID" column="leader_ID">
+ <generator class="native"/>
+ </id>
+ <property name="NAME" column="leader_name" type="string"/>
+ <property name="PARTY_NAME" column="party" type="string"/>
+ <property name="LEADER_TITLE" column="title" type="string"/>
+ <property name="ACCOMPLISHMENT" column="achievements" type="string"/>
+ </class>
+ 
+ </hibernate-mapping>
